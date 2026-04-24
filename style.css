@@ -36,6 +36,7 @@ body {
 
 }
 
+
 @keyframes anim-fund {
     from {
         transform: translateY(100vh) rotate(0deg);
@@ -49,149 +50,85 @@ body {
 
 }
 
-.formas span:nth-last-of-type(even) {
-    background: rgba(47, 213, 255, 0.377);
-}
-
-#menu {
-    display: none;
-}
-
-#menu-desk {
-    display: block;
-}
-
-#cabecalho #menu-desk {
-    margin-top: 2rem;
-    width: 100%;
-    height: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
-
-}
-
-#menu-desk ul {
-    display: flex;
-
-    justify-content: center;
-
-    list-style: none;
-    gap: 9rem;
-    font-size: 1.5rem;
-}
-
-#menu-desk li a {
-    color: rgb(245, 211, 233);
-    text-decoration: none;
-    position: relative;
-
-}
-
-#menu-desk li a::after {
-    content: '';
-    height: 3px;
-    width: 0;
+.barra{z-index: 10000;
+    margin-top: 3rem;
+    margin-left:5rem;
+    display: flex; 
     position: absolute;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(90deg, rgb(50, 50, 151), rgb(128, 9, 207));
-    transition: width 0.5s ease;
+    gap: 10rem;
+    padding: 1.1rem;
+    border: solid grey;
 }
 
-#menu-desk li a:hover::after {
-    content: '';
-    height: 3px;
-    width: 100%;
-}
-
-
-#inicio {
-
-
+#inicio{
     min-height: 100vh;
     display: flex;
+
+
+}
+
+.frase{
+  z-index: -1;
+    font-size: 1.6rem;
+    color:aliceblue;
+
+    font-family: "Montserrat", sans-serif;
+    
+}
+.frase span{
+    color: rgb(199, 2, 206);
+}
+
+.frase h1{z-index: -3;
+
+width: 50rem;
+    margin-top: 8rem;
+    margin-left: 3rem;
+    padding: 2rem;
+}
+.frase{
+    z-index: 2;
+}
+.frase2 h2{ border: #9996962c solid;
+    height: 12rem;
+    width: 31rem;
+    padding: 2rem;
+     color: rgb(248, 238, 248);
+    font-family: "Montserrat", sans-serif;
+    margin-top:22rem;
+    position: relative;
+    right: 45rem;
+ 
+}
+.photo_info{
+   
+    flex-direction: column;
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    position: relative;
+   position: absolute;
+   top: 8rem;
+   right: 5rem;
     z-index: 1;
-
 }
 
-#inicio h1 {
+.my_image img{
+    width: 18rem;
+}
+.name{
+    color: rgb(243, 46, 250);
+    font-family: "Tektur", sans-serif;
+  font-optical-sizing: auto;
+font-weight: 100;
+  font-style: normal;
+  
 
-    margin-top: 2rem;
-    color: rgb(228, 95, 183);
-    font-size: 2rem;
-
+}
+.cargo{
+    font-size: 1.1rem;
     font-family: "Audiowide", sans-serif;
-    font-weight: 500;
     font-style: normal;
-
-}
-
-#inicio p {
-
-    color: aliceblue;
-    font-size: 1.3rem;
-
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400px;
-    font-style: normal;
-}
-
-.container {
-
-    position: relative;
-    width: 280px;
-    height: 280px;
-    animation: flutuar 3s ease-in-out infinite;
-
-
-
-
-}
-
-.container:hover .flip {
-    transform: rotateY(180deg);
-}
-
-.flip {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    transform-style: preserve-3d;
-    transition: .5s;
-
-}
-
-.frente img,
-.frente,
-.tras,
-.tras img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px 3px rgb(134, 133, 133);
-
-    backface-visibility: hidden;
-}
-
-.tras {
-    transform: rotateY(180deg);
-    background: linear-gradient(rgb(147, 147, 231), rgb(243, 137, 243), rgb(198, 198, 255));
+    color: rgb(248, 238, 248);
 }
 
 .curriculo {
@@ -213,7 +150,6 @@ body {
 .curriculo a:hover {
     text-decoration: underline;
 
-
 }
 
 #sobre {
@@ -221,6 +157,7 @@ body {
     margin: 0 auto;
     max-width: 1200px;
     position: relative;
+    padding: 5rem;
 }
 
 #sobre h1 {
